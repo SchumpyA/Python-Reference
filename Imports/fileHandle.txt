@@ -1,0 +1,2 @@
+This has been written to another file
+ more text has been added to the file

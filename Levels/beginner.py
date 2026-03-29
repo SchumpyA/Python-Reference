@@ -21,7 +21,6 @@ print(dead)
 print()
 
 # Input
-
 # Use input command to take input from terminal, the test inside the parameter is printed before taking the input
 name = input("Enter Name: ")
 print(name)
@@ -99,16 +98,19 @@ square = lambda x: x*x
 nums = [1,2,3,2]
 nums.append(4)
 print(nums)
+print(len(nums))   # len() returns the number of items in the list/tuple/set
 
 # Tuples
 # Tuples are just like lists, except they are immutable (cannot be changed after initialization)
 t = (1,2,3)
 print(t)
+print(len(t))   # len() returns the number of items in the list/tuple/set
 
 # Sets
 # Sets are mutable, unordered (no guarenteed order), don't allow duplicates, and don't support indexing
 s = {1,2,3,3,5,23, 12}
 print(s)
+print(len(s))   # len() returns the number of items in the list/tuple/set
 
 # Dictionaries
 # a built-in, mutable data structure that stores data in key-value pairs.
@@ -136,4 +138,11 @@ user_profile["email"] = "alice@example.com"
 # Deleting a key-value pair
 del user_profile["city"]
 print(user_profile)
+print(len(user_profile))    # For dictionaries len() returns the number of key/value pairs in the dictionary
 print()
+
+# Error Handling
+try:
+    a = int(input("Input Number: "))
+except:
+    print("Invalid input")
