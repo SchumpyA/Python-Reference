@@ -210,3 +210,15 @@ def talk2():
 
 print(talk1())
 print(talk2())
+print()
+
+# Recursion in Python
+def factorial(n):
+  # Base case
+  if n == 0 or n == 1:
+    return 1
+  # Recursive case
+  else:
+    return n * factorial(n - 1)
+
+print(factorial(5))
